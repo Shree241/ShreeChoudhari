@@ -1,0 +1,76 @@
+/* Coordinated motion, with an immediately readable static fallback. */
+:root { --motion-ease: cubic-bezier(.16,1,.3,1); }
+.hero-line { display: block; }
+.hero { perspective: 1200px; }
+.hero-photo { border-width: 9px; border-radius: 28px; }
+.hero-photo.depth-surface {
+  transform: perspective(1200px) translateY(var(--scroll-lift,0px)) rotateX(var(--depth-x,0deg)) rotateY(var(--depth-y,0deg));
+  transition: transform .55s var(--motion-ease), box-shadow .55s var(--motion-ease);
+}
+.hero-photo:hover { box-shadow: 0 30px 90px #0005; }
+.topbar::after {
+  content: ''; position: absolute; inset: auto 0 -1px; height: 2px;
+  background: var(--accent); transform: scaleX(var(--reading-progress,0));
+  transform-origin: left; pointer-events: none;
+}
+.project-card { border-radius: 24px; transition: transform .5s var(--motion-ease), border-color .35s, box-shadow .5s; }
+.project-card:hover { transform: translateY(-8px); box-shadow: 0 24px 50px #0003; }
+.project-card:focus-within { border-color: var(--accent); }
+.project-visual { isolation: isolate; transform-origin: center; }
+.project-visual.depth-surface {
+  transform: perspective(1100px) rotateX(var(--depth-x,0deg)) rotateY(var(--depth-y,0deg));
+  transition: transform .6s var(--motion-ease);
+}
+.project-visual::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background: linear-gradient(120deg, transparent 25%, #ffffff12 48%, transparent 72%);
+  transform: translateX(-100%); transition: transform .8s var(--motion-ease), opacity .45s;
+}
+.project-card:hover .project-visual::after { opacity: 1; transform: translateX(30%); }
+.project-card .card-footer b { transition: color .25s; }
+.project-card:hover .card-footer b { color: var(--accent); }
+.photo-card { perspective: 1100px; }
+.photo-card > img.depth-surface {
+  transform: perspective(1100px) rotateX(var(--depth-x,0deg)) rotateY(var(--depth-y,0deg)) scale(var(--photo-scale,1));
+  transition: transform .75s var(--motion-ease);
+  transform-origin: center;
+}
+.photo-card figcaption { position: relative; z-index: 1; background: var(--surface2); }
+.skills-grid article,.record,.contact-row { transition: border-color .35s, background .35s; }
+.skills-grid article:hover,.record:hover,.contact-row:hover { border-color: color-mix(in srgb,var(--accent) 50%,var(--line)); }
+.pill { transition: box-shadow .3s, background .3s, color .3s, transform .4s var(--motion-ease); }
+.pill:hover { transform: translateY(-2px); }
+.filters a { transition: background .3s, color .3s, border-color .3s, box-shadow .3s; }
+.filters a:hover { border-color: var(--accent); }
+.speedrun { transition: color .25s; }
+.speedrun:hover .accent { display: inline-block; transform: rotate(-12deg); }
+.detail-body aside { position: sticky; top: 100px; }
+#jump-menu:not([hidden]) { animation: menu-enter .25s var(--motion-ease); transform-origin: top left; }
+.drawer::backdrop { animation: backdrop-enter .35s ease-out; }
+@keyframes menu-enter { from { opacity: 0; transform: translateY(-7px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes backdrop-enter { from { opacity: 0; } to { opacity: 1; } }
+
+/* Native navigation remains immediate, including browsers without this enhancement. */
+@view-transition { navigation: auto; }
+.topbar { view-transition-name: portfolio-header; }
+::view-transition-old(root) { animation: page-out .2s ease-out both; }
+::view-transition-new(root) { animation: page-in .5s var(--motion-ease) both; }
+::view-transition-group(portfolio-header) { animation-duration: .3s; }
+@keyframes page-out { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes page-in { from { opacity: 0; transform: translateY(22px); } }
+
+@media (max-width:760px) {
+  .hero-photo { border-width: 7px; border-radius: 24px; }
+  .hero-photo.depth-surface,.project-visual.depth-surface,.photo-card>img.depth-surface { transform: none; }
+  .detail-body aside { position: static; }
+}
+@media (hover:none) {
+  .project-card:hover,.pill:hover { transform: none; }
+  .project-visual::after { display: none; }
+}
+@media (prefers-reduced-motion:reduce) {
+  @view-transition { navigation: none; }
+  *,*::before,*::after { animation:none!important; transition:none!important; }
+  .depth-surface,.hero-photo.depth-surface,.project-visual.depth-surface,.photo-card>img.depth-surface { transform:none!important; }
+  ::view-transition-old(root),::view-transition-new(root),::view-transition-group(portfolio-header) { animation:none; }
+}
