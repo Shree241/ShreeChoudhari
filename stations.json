@@ -1,0 +1,107 @@
+[
+  {
+    "id": "xr",
+    "short": "XR TRAINING",
+    "title": "A safer place<br>to practise.",
+    "name": "XR training system",
+    "context": "Morocco facility · Immersive manufacturing training",
+    "problem": "Prepare operators to practise manufacturing tasks through immersive training.",
+    "did": "Supported XR/VR training system deployment, testing and technical support.",
+    "tools": [
+      "Meta Quest 3S",
+      "HTC Vive Pro",
+      "SteamVR"
+    ],
+    "result": "[ADD: approved training outcome and operator feedback.]",
+    "readout": "XR / TRAINING ENVIRONMENT"
+  },
+  {
+    "id": "llm",
+    "short": "AI TRANSLATION",
+    "title": "Meaning, across<br>languages.",
+    "name": "AI/LLM multilingual translation optimisation",
+    "context": "Language models · Multilingual communication",
+    "problem": "Support communication across languages in an industrial environment.",
+    "did": "Worked on AI/LLM multilingual translation optimisation. [ADD: specific languages, evaluation method and my implementation scope.]",
+    "tools": [
+      "Ollama",
+      "Llama 3.x"
+    ],
+    "result": "[ADD: verified translation quality or deployment outcome.]",
+    "readout": "AI / TOKEN STREAM"
+  },
+  {
+    "id": "wind",
+    "short": "WIND ENERGY",
+    "title": "From moving air<br>to useful energy.",
+    "name": "3 kW vertical axis wind turbine",
+    "context": "CQA Dehu Road, Pune · Installation and commissioning",
+    "problem": "Integrate a vertical axis wind turbine into an on-site renewable energy installation.",
+    "did": "Participated in installation and commissioning. [ADD: my specific electrical, mechanical and validation tasks.]",
+    "tools": [
+      "Vertical axis wind turbine",
+      "Installation",
+      "Commissioning"
+    ],
+    "result": "[ADD: approved commissioning result. No measured generation data supplied.]",
+    "readout": "VAWT / 3 kW RATED"
+  },
+  {
+    "id": "tasks",
+    "short": "TASK MANAGEMENT",
+    "title": "Clear ownership.<br>Visible progress.",
+    "name": "Task scheduling and review management app",
+    "context": "Enterprise workflows · Planning and review",
+    "problem": "Make task scheduling and review activity easier to organise and follow.",
+    "did": "Worked on a task scheduling and review management application. [ADD: features I built and review workflow.]",
+    "tools": [
+      "Microsoft Power Apps"
+    ],
+    "result": "[ADD: approved application outcome and usage.]",
+    "readout": "APP / REVIEW QUEUE"
+  },
+  {
+    "id": "hrms",
+    "short": "HRMS AUTOMATION",
+    "title": "A workflow that<br>keeps moving.",
+    "name": "HRMS automation",
+    "context": "Enterprise workflows · Process automation",
+    "problem": "Connect HR process steps in an automated workflow.",
+    "did": "Developed workflow automation solutions and technical documentation. [ADD: approved HRMS workflow scope.]",
+    "tools": [
+      "Microsoft Power Automate"
+    ],
+    "result": "[ADD: verified process outcome. No time-saving figure supplied.]",
+    "readout": "FLOW / TRIGGER → APPROVAL → RECORD"
+  },
+  {
+    "id": "agent",
+    "short": "RECRUITMENT AI",
+    "title": "Information ready<br>for human review.",
+    "name": "AI powered recruitment co-agent",
+    "context": "AI applications · Recruitment support",
+    "problem": "Explore AI assistance for organising recruitment information.",
+    "did": "Worked on an AI powered recruitment co-agent. [ADD: my implementation scope, review controls and evaluation method.]",
+    "tools": [
+      "Qwen LLM"
+    ],
+    "result": "[ADD: approved prototype outcome. Illustration uses no real candidate data.]",
+    "readout": "AGENT / ILLUSTRATIVE SCAN"
+  },
+  {
+    "id": "csr",
+    "short": "PEOPLE & PURPOSE",
+    "title": "Technology means<br>more when shared.",
+    "name": "CSR with the NAAM Foundation",
+    "context": "Community outreach · Digital literacy",
+    "problem": "Make digital literacy and career awareness more accessible to students.",
+    "did": "Conducted a Digital Literacy and Career Development session at Zilla Parishad Prathamik School, Malvandi Village, Pune, on 30 March 2026.",
+    "tools": [
+      "Digital literacy",
+      "AI awareness",
+      "Career development"
+    ],
+    "result": "Certificate of Appreciation available. [ADD: approved details of the NAAM Foundation collaboration.]",
+    "readout": "CSR / HUMAN CONNECTION"
+  }
+]

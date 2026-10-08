@@ -1,0 +1,474 @@
+{
+  "projects": [
+    {
+      "id": "tasl-vr-welding",
+      "title": "Creation and Integration of AR/VR Modules to enhance Employee skills in Manufacturing Operations for India and Morocco",
+      "category": "corporate",
+      "org": "Tata Advanced Systems",
+      "brand": "TATA",
+      "sub": "ADVANCED SYSTEMS",
+      "period": "15 June to 31 July 2025",
+      "role": "AR/VR Project Intern",
+      "summary": "Real welding equipment, calibrated industrial sensors and multilingual VR modules for repeatable operator training.",
+      "tags": [
+        "Industrial Sensors",
+        "Sensor Calibration",
+        "VR Welding",
+        "Performance Analysis",
+        "System Integration",
+        "Multilingual Training"
+      ],
+      "overview": "At Tata Advanced Systems, Land Mobility Division, I worked on the creation and integration of AR/VR training modules for manufacturing operations in India and Morocco. The work connected industrial equipment, virtual simulations and operator feedback.",
+      "work": [
+        "Integrated industrial sensors with real welding equipment to connect physical torch movement to virtual welding exercises.",
+        "Calibrated sensing and reviewed hand straightness, torch position and travel speed as operator performance measures.",
+        "Supported 3D model preparation, room setup and VR training sessions for manufacturing teams in India and Morocco.",
+        "Tested simulation stability and latency, documented interface issues and coordinated technical improvements with vendor engineers.",
+        "Developed an offline multilingual translator to support communication with international delegates."
+      ],
+      "context": "The training system gives operators repeatable practice and immediate performance feedback. The simulated weld strength score is a training metric, rather than a physical weld qualification test.",
+      "logo": "tasl-logo.png",
+      "documents": [
+        {
+          "file": "tasl-2025-certificate.pdf",
+          "preview": "tasl-2025-certificate-preview.jpg",
+          "title": "2025 Internship Certificate"
+        },
+        {
+          "file": "tasl-2025-lor.pdf",
+          "preview": "tasl-2025-lor-preview.jpg",
+          "title": "2025 Letter of Recommendation"
+        }
+      ],
+      "cardTitle": "AR/VR Manufacturing Training"
+    },
+    {
+      "id": "tasl-ai-digital-transformation",
+      "title": "Tata Advanced Systems Ltd \u00b7 LMD AI Driven Digital Transformation",
+      "category": "corporate",
+      "org": "Tata Advanced Systems \u00b7 Land Mobility Division",
+      "logo": "tasl-logo.png",
+      "period": "19 January to 19 July 2026",
+      "role": "Digital Transformation Intern",
+      "summary": "AI and LLM applications, enterprise workflow automation, XR/VR deployment and renewable energy commissioning.",
+      "tags": [
+        "AI / LLM Applications",
+        "Workflow Automation",
+        "XR / VR",
+        "Commissioning",
+        "Technical SOPs",
+        "Vendor Coordination"
+      ],
+      "overview": "In my second internship at Tata Advanced Systems, Land Mobility Division, I supported AI driven digital transformation and automation initiatives across manufacturing training and enterprise workflows.",
+      "work": [
+        "Contributed to AI and LLM application development and optimisation for enterprise productivity.",
+        "Developed workflow automation solutions and prepared technical documentation and Standard Operating Procedures.",
+        "Assisted with XR/VR training system deployment, testing and technical support.",
+        "Participated in renewable energy system installation and commissioning.",
+        "Coordinated technical requirements and issue resolution with cross functional teams and external vendors.",
+        "Contributed to digital literacy and sustainability initiatives through the company CSR programme."
+      ],
+      "context": "This internship extended my work from immersive operator training into digital operations, application development and practical implementation.",
+      "documents": [
+        {
+          "file": "tasl-2026-certificate.pdf",
+          "preview": "tasl-2026-certificate-preview.jpg",
+          "title": "2026 Internship Certificate"
+        }
+      ],
+      "cardTitle": "AI Driven Digital Transformation"
+    },
+    {
+      "id": "tata-motors-launch",
+      "title": "Punch MY24 \u00b7 Manufacturing Launch & Quality",
+      "category": "corporate",
+      "org": "Tata Motors",
+      "brand": "TATA",
+      "sub": "MOTORS",
+      "period": "Jun \u00b7 Aug 2024",
+      "role": "Project Intern",
+      "summary": "New model introduction, proving plans, manufacturing readiness and cross functional quality coordination.",
+      "tags": [
+        "SAP",
+        "IPMS",
+        "PPAP / VQA",
+        "BIW Proving",
+        "Part Genealogy",
+        "Manufacturing Readiness"
+      ],
+      "overview": "During the Punch MY24 launch at Tata Motors Passenger Vehicle Limited, I supported new model introduction and operational quality. My work connected proving activities, component readiness, vehicle tracking and quality data.",
+      "work": [
+        "Managed Vendor Quality Assurance data and supported PPAP compliance.",
+        "Prepared proving plans and reviewed rollup data for more than 35 BIW variants.",
+        "Used SAP for project data and IPMS for vehicle status tracking.",
+        "Supported readiness checks across Press/BIW, facilities, software, logistics and VQA.",
+        "Collaborated with TS, CPA, VQA, craftsmanship and logistics teams.",
+        "Supported component fitment checks, prismatic battery bolt inspection, brake tube interference follow up and ECU flashing activities.",
+        "Reviewed manufacturing information through BOM data, part genealogy and station readiness records."
+      ],
+      "context": "This experience strengthened my understanding of how launch coordination and manufacturing quality depend on reliable information across departments.",
+      "logo": "tata-logo.png",
+      "documents": [
+        {
+          "file": "tata-motors-certificate.pdf",
+          "preview": "tata-motors-certificate-preview.jpg",
+          "title": "Internship Certificate"
+        },
+        {
+          "file": "tata-motors-lor.pdf",
+          "preview": "tata-motors-lor-preview.jpg",
+          "title": "Letter of Recommendation"
+        }
+      ]
+    },
+    {
+      "id": "iit-bombay-drug-delivery",
+      "title": "Transdermal Drug Delivery \u00b7 Device Development",
+      "category": "corporate",
+      "org": "IIT Bombay \u00b7 NanoBios Lab",
+      "brand": "IIT BOMBAY",
+      "sub": "NANOBIOS LAB",
+      "period": "Apr \u00b7 Aug 2023",
+      "role": "Research Intern",
+      "summary": "Sonophoresis, iontophoresis and rapidly prototyped microneedle moulds for transdermal drug delivery.",
+      "tags": [
+        "KiCad PCB Design",
+        "Ultrasound Drivers",
+        "Iontophoresis",
+        "Temperature Sensing",
+        "Fusion 360",
+        "Microneedle Prototyping"
+      ],
+      "overview": "At IIT Bombay, I contributed to medical device development for transdermal drug delivery. My work covered electronic circuits, transducer integration, experimental validation and the design of microneedle moulds.",
+      "work": [
+        "Designed circuit schematics and PCB layouts in KiCad for a sonophoresis drug delivery prototype.",
+        "Integrated ultrasound transducers and driver circuitry, with temperature monitoring during module testing.",
+        "Supported experimental work on porcine skin and recorded prototype observations for iterative development.",
+        "Contributed to controlled current circuitry for iontophoresis based transdermal delivery.",
+        "Designed microneedle moulds in Fusion 360 and supported fabrication through 3D printing."
+      ],
+      "context": "Research internship at NanoBios Lab, Department of Biosciences and Bioengineering, under Prof. Rohit Srivastava. Projects covered sonophoresis, iontophoresis and 3D printed microneedle based drug delivery.",
+      "logo": "iit-bombay-logo.png",
+      "documents": [
+        {
+          "file": "iit-bombay-certificate.pdf",
+          "preview": "iit-bombay-certificate-preview.jpg",
+          "title": "Research Internship Certificate"
+        },
+        {
+          "file": "iit-bombay-lor.pdf",
+          "preview": "iit-bombay-lor-preview.jpg",
+          "title": "Letter of Recommendation"
+        }
+      ]
+    },
+    {
+      "id": "haldiram-factory-automation",
+      "title": "Automated Guided Vehicle Planning & Factory Automation",
+      "category": "corporate",
+      "org": "Haldiram Foods International",
+      "brand": "HALDIRAM",
+      "sub": "FOODS INTERNATIONAL",
+      "period": "Feb \u00b7 Mar 2023",
+      "role": "Project Intern",
+      "summary": "Automated Guided Vehicle (AGV) route planning, machine design and industrial safety systems.",
+      "tags": [
+        "Automated Guided Vehicles",
+        "Material Flow",
+        "Industrial IoT",
+        "Machine Design",
+        "Maintenance"
+      ],
+      "overview": "At Haldiram Foods International in Nagpur, I worked on Automated Guided Vehicle (AGV) route planning and automation concepts, alongside practical exposure to maintenance and troubleshooting. The work connected material movement, machine design and emergency response with the requirements of a working factory.",
+      "work": [
+        "Developed an Automated Guided Vehicle (AGV) layout for raw material transport, considering worker movement, machinery, safety zones and production routes.",
+        "Designed an automatic pistachio cleaning machine.",
+        "Developed an IoT based emergency response system for automatic fire exit unlocking and alerts.",
+        "Supported maintenance and troubleshooting of existing machinery."
+      ],
+      "context": "Planning automation around workers, machinery, safety zones and production flow helped me understand the factory as a connected system.",
+      "documents": [
+        {
+          "file": "haldiram-certificate.pdf",
+          "preview": "haldiram-certificate-preview.jpg",
+          "title": "Industrial Training Certificate"
+        }
+      ]
+    },
+    {
+      "id": "aeromind",
+      "title": "AeroMind \u00b7 Autonomous Multi Payload UAV",
+      "category": "academic",
+      "org": "Symbiosis Skills & Professional University",
+      "image": "aeromind-uav-prototype.jpg",
+      "imageAlt": "AeroMind modular UAV prototype with payload mounting and operator",
+      "period": "B.Tech \u00b7 Final year project",
+      "role": "Project Team Member",
+      "summary": "An autonomous modular aerial system for medical logistics, surveillance and disaster response.",
+      "tags": [
+        "UAV Integration",
+        "Embedded Control",
+        "Thermal Imaging",
+        "AI Perception",
+        "Payload Design",
+        "Rapid Prototyping"
+      ],
+      "overview": "AeroMind is an autonomous modular multi payload aerial system with adaptive AI control architecture. The final year project explored how one aerial platform could support medical logistics, surveillance and disaster response applications.",
+      "work": [
+        "Integrated autonomous flight, AI perception and embedded control into the aerial system architecture.",
+        "Developed the modular payload arrangement for medical logistics, surveillance and disaster response use cases.",
+        "Evaluated payload mass, mounting constraints and airframe integration during prototype iterations.",
+        "Tested thermal imaging and person detection for surveillance, including aerial thermal capture and ground based RGB and thermal validation."
+      ],
+      "context": "Utility Patent Application No. 202621059159 is published. Related research was presented at CVR 2026, NIT Goa, with proceedings forthcoming in Springer.",
+      "gallery": [
+        {
+          "image": "aeromind-uav-prototype.jpg",
+          "title": "Modular Multipayload UAV Prototype",
+          "caption": "Physical aerial platform and payload mounting arrangement during prototype demonstration."
+        },
+        {
+          "image": "uav-aerial-thermal-imaging.jpg",
+          "title": "UAV Based Aerial Thermal Imaging",
+          "caption": "Thermal scene captured from the drone for surveillance and situational awareness."
+        },
+        {
+          "image": "thermal-vision-person-detection.jpg",
+          "title": "Ground Based RGB and Thermal Person Detection",
+          "caption": "Visible and thermal image views with person detection overlays during a ground test."
+        }
+      ]
+    },
+    {
+      "id": "smart-mobility-aid",
+      "title": "Smart Mobility Aid \u00b7 Navigation & Emergency Response",
+      "category": "academic",
+      "org": "Symbiosis Skills & Professional University",
+      "brand": "MOBILITY AID",
+      "sub": "ASSISTIVE ENGINEERING",
+      "period": "Academic project",
+      "role": "Project Developer",
+      "summary": "Obstacle detection, haptic feedback and location aware emergency assistance for the visually impaired.",
+      "tags": [
+        "Arduino",
+        "Raspberry Pi",
+        "GPS / GSM",
+        "Sensor Integration"
+      ],
+      "overview": "This smart mobility aid combines obstacle detection, fall detection and emergency communication to support people with visual impairments. The project joins embedded electronics and sensor feedback with practical assistive device design.",
+      "work": [
+        "Integrated ultrasonic sensors and haptic feedback for obstacle detection.",
+        "Used Arduino and Raspberry Pi for control and supporting functions.",
+        "Integrated a GPS/GSM module for live tracking and distress alerts.",
+        "Used piezoelectric sensors for fall detection and a camera for emergency image capture."
+      ],
+      "context": "Utility Patent Application No. 202421073593. Granted Design No. 436426-001. Copyright application for Smart Mobility Aid with AI powered Navigation and Emergency Assistance for the Visually Impaired."
+    },
+    {
+      "id": "fdm-printer",
+      "title": "FDM 3D Printer \u00b7 Connected Rapid Prototyping",
+      "category": "academic",
+      "org": "Academic project",
+      "brand": "FDM // 3D",
+      "sub": "ADDITIVE MANUFACTURING",
+      "period": "Academic project",
+      "role": "Designer & Builder",
+      "summary": "A 3D printer built from scratch with LAN connectivity and filament monitoring.",
+      "tags": [
+        "3D Printing",
+        "Fabrication",
+        "LAN Connectivity",
+        "Sensors"
+      ],
+      "overview": "I designed and fabricated a functional FDM 3D printer from scratch. The project combined mechanical construction, electronics, printer configuration and monitoring features.",
+      "work": [
+        "Built and configured the FDM printer.",
+        "Integrated LAN connectivity for remote operation.",
+        "Added filament monitoring sensors to reduce material waste during failed prints."
+      ],
+      "context": "The project developed practical skills in mechanical assembly, embedded electronics and additive manufacturing."
+    },
+    {
+      "id": "plc-assembly-line",
+      "title": "Automated Assembly Line \u00b7 PLC Integration",
+      "category": "academic",
+      "org": "Academic project",
+      "brand": "PLC // S7",
+      "sub": "INDUSTRIAL AUTOMATION",
+      "period": "Academic project",
+      "role": "System Developer",
+      "summary": "Siemens S7-300 process control with sensors, actuators and real time monitoring.",
+      "tags": [
+        "Siemens S7 300",
+        "Ladder Logic",
+        "Digital I/O",
+        "TIA Portal",
+        "Sensor Integration",
+        "Equipment Sequencing"
+      ],
+      "overview": "I customised and integrated an automated assembly line system using a Siemens S7-300 PLC. The work focused on process control, equipment sequencing and feedback from industrial sensors.",
+      "work": [
+        "Configured Siemens S7 300 PLC hardware and developed ladder logic in TIA Portal.",
+        "Mapped sensor inputs and actuator outputs to the PLC I/O for equipment sequencing.",
+        "Integrated sensors and actuators into the assembly process and checked the control sequence during operation."
+      ],
+      "context": "This project turned classroom knowledge of PLCs and automation into an integrated control system."
+    },
+    {
+      "id": "hmi-chemical-mixing",
+      "title": "Chemical Mixing \u00b7 HMI Process Control",
+      "category": "academic",
+      "org": "Academic project",
+      "brand": "HMI // MIX",
+      "sub": "PROCESS AUTOMATION",
+      "period": "Academic project",
+      "role": "PLC & HMI Developer",
+      "summary": "A Siemens PLC controlled mixing process with custom HMI screens and live process tags.",
+      "tags": [
+        "TIA Portal",
+        "HMI Design",
+        "PLC",
+        "Ladder Logic"
+      ],
+      "overview": "This project automated a chemical mixing process through a Siemens PLC and an HMI. I developed control logic and operator screens around the process requirements.",
+      "work": [
+        "Developed ladder logic in TIA Portal for the chemical mixing sequence.",
+        "Configured PLC and HMI tags to connect process states with operator controls.",
+        "Designed operator screens for monitoring and controlling the mixing process.",
+        "Checked live tag updates and operator command responses during system integration."
+      ],
+      "context": "The project connected control programming with the way operators monitor and interact with a process."
+    },
+    {
+      "id": "flex-sensor-hand",
+      "title": "Robotic Hand \u00b7 Gesture Based Control",
+      "category": "academic",
+      "org": "Academic project",
+      "brand": "FLEX // HAND",
+      "sub": "ROBOTICS & CONTROL",
+      "period": "Academic project",
+      "role": "Project Developer",
+      "summary": "A robotic hand that mirrors human finger movement through flex sensor input.",
+      "tags": [
+        "Flex Sensors",
+        "Servo Control",
+        "Robotics",
+        "Embedded Systems"
+      ],
+      "overview": "I developed a robotic hand controlled by flex sensors. The project translated human finger movement into commands for the robotic mechanism.",
+      "work": [
+        "Calibrated flex sensor readings against finger bending to establish the usable input range.",
+        "Mapped sensor values to servo commands for individual finger movement.",
+        "Integrated sensing, embedded control and mechanical actuation into the robotic hand."
+      ],
+      "context": "The prototype combined sensor calibration, embedded control and mechanical movement."
+    },
+    {
+      "id": "pet-filament",
+      "title": "PET Filament \u00b7 Sustainable 3D Printing",
+      "category": "academic",
+      "org": "Academic project",
+      "brand": "PET // LOOP",
+      "sub": "MATERIAL REUSE",
+      "period": "Academic project",
+      "role": "Designer & Builder",
+      "summary": "A heated extrusion system that converts plastic bottle ribbons into 3D printer filament.",
+      "tags": [
+        "PET Recycling",
+        "Heated Extrusion",
+        "Thermal Control",
+        "Mechanical Feed",
+        "Fabrication"
+      ],
+      "overview": "I developed a PET filament machine to reuse plastic bottles as feedstock for 3D printing. The machine processes bottle ribbons through a heated nozzle to create filament.",
+      "work": [
+        "Designed a heated nozzle system for PET bottle ribbons.",
+        "Developed the mechanical feed and extrusion arrangement.",
+        "Worked toward uniform filament for printing applications."
+      ],
+      "context": "The project explored a practical connection between material reuse and additive manufacturing."
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Lead Coordinator \u00b7 Robotics Competition",
+      "org": "SSPU \u00b7 2025",
+      "mark": "SSPU",
+      "body": "Led coordination of the university level robotics competition involving 24 teams. The role combined technical preparation, participant coordination and event delivery.",
+      "image": "robotics-workshop.jpg",
+      "caption": "Hands on robotics activities at SSPU."
+    },
+    {
+      "title": "Digital Literacy & Career Development",
+      "org": "Tata Advanced Systems \u00b7 CSR Initiative",
+      "mark": "TASL",
+      "body": "Conducted a Digital Literacy and Career Development session for students at Zilla Parishad Prathamik School, Malvandi Village, Pune, on 30 March 2026. Introduced digital literacy, artificial intelligence and career awareness as part of Tata Advanced Systems\u2019 CSR initiative.",
+      "image": "digital-literacy-csr.jpg",
+      "caption": "Digital Literacy and Career Development session at Malvandi Village, Pune, on 30 March 2026.",
+      "documents": [
+        {
+          "file": "csr-certificate.pdf",
+          "preview": "csr-certificate-preview.jpg",
+          "title": "CSR Certificate of Appreciation"
+        }
+      ]
+    },
+    {
+      "title": "Department Representative \u00b7 TVET Conference",
+      "org": "SSPU \u00b7 International Conference",
+      "mark": "TVET",
+      "body": "Represented the School of Mechatronics Engineering by showcasing projects and laboratory facilities to conference participants and distinguished guests, and interacted with Sonam Wangchuk.",
+      "image": "tvet-conference.jpg",
+      "caption": "Conference participation and university representation."
+    },
+    {
+      "title": "Department Placement Coordinator",
+      "org": "School of Mechatronics Engineering \u00b7 SSPU",
+      "mark": "SSPU",
+      "body": "Managed placement activities for the Mechatronics department, coordinating students, faculty and company representatives. Handled communication, scheduling and departmental follow up, using clear communication to support employer engagement and a smooth recruitment process."
+    },
+    {
+      "title": "Workshop Organiser \u00b7 Robotics & Drones",
+      "org": "SSPU \u00b7 Practical Engineering Workshops",
+      "mark": "LAB",
+      "body": "Organised and conducted Robotics in a Day: From Concept to Creation and a drone technology workshop for diploma students. Managed planning, participant coordination and practical demonstrations, introducing students to robotics, aerial systems and their engineering applications.",
+      "image": "drone-workshop.jpg",
+      "caption": "Drone technology workshop for students."
+    },
+    {
+      "title": "Executive Member \u00b7 ISTE",
+      "org": "Indian Society for Technical Education \u00b7 Until 2024",
+      "mark": "ISTE",
+      "body": "Served as an executive member of ISTE at SSPU and contributed to technical and student activities."
+    }
+  ],
+  "education": {
+    "btech": {
+      "title": "Bachelor of Technology in Mechatronics Engineering",
+      "org": "Symbiosis Skills & Professional University \u00b7 Pune",
+      "score": "9.0057 / 10",
+      "year": "2026",
+      "body": "Automation, Robotics, Embedded Electronics, Application and Device Development formed the core of my undergraduate studies. Academic projects and industrial internships helped me apply this foundation to control systems, medical devices, smart manufacturing and autonomous systems.",
+      "courses": [
+        "Industrial Automation & IoT",
+        "Robotics",
+        "Embedded Electronics",
+        "Application & Device Development",
+        "Rapid Prototyping"
+      ]
+    },
+    "diploma": {
+      "title": "Diploma in Mechatronics Engineering",
+      "org": "Government Polytechnic, Nagpur",
+      "score": "86%",
+      "year": "2023",
+      "body": "Graduated as a silver medallist. The diploma introduced me to PLCs, SCADA, power electronics, drive systems and rapid prototyping, establishing the practical foundation for my engineering work.",
+      "courses": [
+        "PLC & SCADA",
+        "Power Electronics",
+        "Drive Systems",
+        "Rapid Prototyping"
+      ]
+    }
+  }
+}
