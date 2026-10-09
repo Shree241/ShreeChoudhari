@@ -62,16 +62,16 @@ export function createRobot() {
     box(finger,.065,.28,.14,steel,0,.14,0);
     box(finger,.1,.055,.15,black,-side*.025,.27,0);return finger;
   });
-  const tip=new THREE.Object3D();tip.position.y=.65;toolRoll.add(tip);
-  function setPose({base:angleBase=20,shoulder:angleShoulder=-20,elbow:angleElbow=-70,wrist:angleWrist=0,pitch=0,roll=0,grip=.7}={}) {
+  const tip=new THREE.Object3D();tip.position.y=.5;toolRoll.add(tip);
+  function setPose({base:angleBase=20,shoulder:angleShoulder=-20,elbow:angleElbow=-70,wrist:angleWrist=0,pitch=0,roll=0,grip=.7,toolAngle=-90}={}) {
     base.rotation.y=THREE.MathUtils.degToRad(angleBase);
     shoulder.rotation.z=THREE.MathUtils.degToRad(angleShoulder);
     elbow.rotation.z=THREE.MathUtils.degToRad(angleElbow);
-    wrist.rotation.z=THREE.MathUtils.degToRad(-90-angleShoulder-angleElbow);
+    wrist.rotation.z=THREE.MathUtils.degToRad(toolAngle-angleShoulder-angleElbow);
     wristRoll.rotation.y=THREE.MathUtils.degToRad(angleWrist);
     wristPitch.rotation.z=THREE.MathUtils.degToRad(pitch);
     toolRoll.rotation.y=THREE.MathUtils.degToRad(roll);
-    fingers.forEach((finger,i)=>{finger.position.x=(i===0?-1:1)*(.1+.08*grip);});
+    fingers.forEach((finger,i)=>{finger.position.x=(i===0?-1:1)*(.17+.14*grip);});
     robot.updateMatrixWorld(true);
   }
   setPose();

@@ -4,8 +4,9 @@ const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const base='/ShreeChoudhari/';
 const low=matchMedia('(max-width: 760px)').matches || (navigator.deviceMemory && navigator.deviceMemory<=4) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency<=4);
-const state=window.portfolioState={running:!reduced.matches,estop:false,manual:false,ambient:!reduced.matches,speed:.4,wind:8,quality:low?'lite':'high',pose:{base:20,shoulder:-20,elbow:-70},pointer:{x:0,y:0,active:false},scroll:0};
+const state=window.portfolioState={running:false,estop:false,manual:false,ambient:!reduced.matches,speed:.4,wind:8,quality:low?'lite':'high',pose:{base:20,shoulder:-20,elbow:-70},pointer:{x:0,y:0,active:false},scroll:0};
 const event=name=>dispatchEvent(new CustomEvent(name));
+const command=detail=>dispatchEvent(new CustomEvent('robot:command',{detail}));
 let toastTimer;function toast(text){const el=$('#toast');el.textContent=text;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,3000);}window.portfolioToast=toast;
 const menu=$('.menu-button');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));$('nav').classList.toggle('open',open);});$$('nav a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');$('nav').classList.remove('open');}));
 $$('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);toast('Copied to clipboard');}catch{toast('Copy: '+b.dataset.copy);}}));
@@ -28,23 +29,23 @@ function onScroll(){scrollQueued=false;if(stations.length){const line=$('.statio
 addEventListener('scroll',()=>{if(!scrollQueued){scrollQueued=true;requestAnimationFrame(onScroll);}},{passive:true});addEventListener('resize',onScroll);if(stations.length)onScroll();
 let audioCtx,oscillator,gain,sound=false;
 function updateSound(){if(!gain||!audioCtx)return;const audible=sound&&state.running&&!state.estop&&state.ambient&&!document.hidden;gain.gain.setTargetAtTime(audible?.012:0,audioCtx.currentTime,.12);oscillator.frequency.setTargetAtTime(44+state.speed*36,audioCtx.currentTime,.15);}
-function ui(){document.body.classList.toggle('alarm',state.estop);document.body.classList.toggle('motion-paused',!state.ambient||state.estop);if($('#hmi-state'))$('#hmi-state').textContent=state.estop?'E-STOP':state.running?(state.ambient?'RUN':'PAUSE'):'STOP';if($('#hmi-caption'))$('#hmi-caption').textContent=state.estop?'Reset to release alarm':state.manual?'Manual joint control':'Robot + conveyor demo';$('#motion-toggle')?.setAttribute('aria-pressed',String(!state.ambient));if($('#motion-toggle'))$('#motion-toggle').textContent=state.ambient?'Pause ambient motion':'Resume ambient motion';$$('.sliders input').forEach(el=>el.disabled=state.estop);if($('#wind'))$('#wind').disabled=state.estop;updateSound();event('machine:change');}
-$('#machine-start')?.addEventListener('click',()=>{if(state.estop){toast('Press Reset to release the emergency stop.');return;}state.running=true;state.ambient=true;state.manual=false;ui();});
-$('#machine-stop')?.addEventListener('click',()=>{state.running=false;ui();});
-$('#machine-estop')?.addEventListener('click',()=>{state.estop=true;state.running=false;ui();});
-$('#machine-reset')?.addEventListener('click',()=>{state.estop=false;state.running=false;state.manual=true;state.pose={base:20,shoulder:-20,elbow:-70};['base','shoulder','elbow'].forEach(k=>{$('#'+k).value=state.pose[k];$('#'+k+'-value').textContent=state.pose[k]+'°';});ui();});
-['base','shoulder','elbow'].forEach(k=>$('#'+k)?.addEventListener('input',e=>{if(state.estop)return;state.running=false;state.manual=true;state.pose[k]=Number(e.target.value);$('#'+k+'-value').textContent=e.target.value+'°';ui();}));
+function ui(){document.body.classList.toggle('alarm',state.estop);document.body.classList.toggle('motion-paused',!state.ambient||state.estop);if($('#hmi-state'))$('#hmi-state').textContent=state.estop?'E-STOP':state.running?(state.ambient?'RUN':'PAUSE'):'STOP';if($('#hmi-caption'))$('#hmi-caption').textContent=state.estop?'Reset to release alarm':state.manual?'Manual joint control':'Automatic pick & place';$('#motion-toggle')?.setAttribute('aria-pressed',String(!state.ambient));if($('#motion-toggle'))$('#motion-toggle').textContent=state.ambient?'Pause ambient motion':'Resume ambient motion';$$('.sliders input').forEach(el=>el.disabled=state.estop||(el.id!=='speed'&&state.programActive));if($('#wind'))$('#wind').disabled=state.estop;updateSound();event('machine:change');}
+$('#machine-start')?.addEventListener('click',()=>{if(state.estop){toast('Press Reset to release the emergency stop.');return;}state.running=true;state.ambient=true;state.manual=false;ui();command('start');});
+$('#machine-stop')?.addEventListener('click',()=>{state.running=false;command('stop');ui();});
+$('#machine-estop')?.addEventListener('click',()=>{state.estop=true;state.running=false;command('stop');ui();});
+$('#machine-reset')?.addEventListener('click',()=>{state.estop=false;state.running=false;state.manual=false;state.programActive=false;command('reset');state.pose={base:20,shoulder:-20,elbow:-70};['base','shoulder','elbow'].forEach(k=>{$('#'+k).value=state.pose[k];$('#'+k+'-value').textContent=state.pose[k]+'°';});ui();});
+['base','shoulder','elbow'].forEach(k=>$('#'+k)?.addEventListener('input',e=>{if(state.estop||state.programActive)return;state.running=false;command('stop');state.manual=true;state.pose[k]=Number(e.target.value);$('#'+k+'-value').textContent=e.target.value+'°';ui();}));
 $('#speed')?.addEventListener('input',e=>{state.speed=Number(e.target.value)/100;$('#speed-value').textContent=e.target.value+'%';ui();});
 $('#motion-toggle')?.addEventListener('click',()=>{state.ambient=!state.ambient;ui();});
 $('#sound-toggle')?.addEventListener('click',async()=>{try{if(!audioCtx){const Context=window.AudioContext||window.webkitAudioContext;if(!Context)throw Error('Audio unavailable');audioCtx=new Context();oscillator=audioCtx.createOscillator();oscillator.type='sine';gain=audioCtx.createGain();gain.gain.value=0;oscillator.connect(gain).connect(audioCtx.destination);oscillator.start();}await audioCtx.resume();sound=!sound;$('#sound-toggle').textContent=sound?'Sound on':'Sound off';$('#sound-toggle').setAttribute('aria-pressed',String(sound));updateSound();}catch{toast('Sound is unavailable in this browser.');}});
 const quality=$('#quality');if(quality){quality.value=state.quality;quality.addEventListener('change',()=>{state.quality=quality.value;event('machine:quality');});}
-$('#wind')?.addEventListener('input',e=>{state.wind=Number(e.target.value);$('#wind-value').textContent=state.wind+' m/s';const power=Math.min(3,3*Math.pow(state.wind/12,3));$('#wind-power').innerHTML=power.toFixed(2)+' <small>kW</small>';event('machine:change');});
 reduced.addEventListener('change',e=>{if(e.matches){state.ambient=false;state.running=false;document.body.classList.remove('cursor-enabled');}ui();event('portfolio:reduced-motion');});
 document.addEventListener('visibilitychange',updateSound);if($('#hmi'))ui();
+$('#hero-start')?.addEventListener('click',()=>$('#machine-start').click());
 const rob=$('#robot-view');rob?.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=rob.getBoundingClientRect();state.pointer={x:((e.clientX-r.left)/r.width-.5)*2,y:(.5-(e.clientY-r.top)/r.height)*2,active:true};});rob?.addEventListener('pointerleave',()=>state.pointer.active=false);
 // Core content and controls do not depend on remote motion libraries.
-if(rob){import(base+'js/scenes.js?v=stations3').catch(()=>{$('#robot-state').textContent='3D unavailable · all project content remains accessible';$('#hmi-state').textContent='OFFLINE';document.body.classList.add('webgl-failed');});}
-if(!reduced.matches)import(base+'js/motion.js?v=stations3').catch(()=>{});
+if(rob){import(base+'js/robot-demo.js?v=pickplace1').then(()=>import(base+'js/scenes.js?v=pickplace1')).catch(()=>{$('#robot-state').textContent='Interactive robot preview';document.body.classList.add('webgl-failed');});}
+if(!reduced.matches)import(base+'js/motion.js?v=pickplace1').catch(()=>{});
 function restoreHash(){if(!location.hash)return;const el=document.getElementById(decodeURIComponent(location.hash.slice(1)));el?.scrollIntoView({behavior:'instant',block:'start'});}
 addEventListener('pageshow',()=>{if(location.hash)requestAnimationFrame(()=>requestAnimationFrame(restoreHash));});
 })();

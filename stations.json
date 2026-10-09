@@ -12,7 +12,7 @@
       "HTC Vive Pro",
       "SteamVR"
     ],
-    "result": "[ADD: approved training outcome and operator feedback.]",
+    "result": "Successfully deployed the system at manufacturing facilities and trained operators to use it. Performance feedback improved operator efficiency and helped the company identify skill levels and further training needs.",
     "readout": "XR / TRAINING ENVIRONMENT"
   },
   {
@@ -22,12 +22,13 @@
     "name": "AI/LLM multilingual translation optimisation",
     "context": "Language models · Multilingual communication",
     "problem": "Support communication across languages in an industrial environment.",
-    "did": "Worked on AI/LLM multilingual translation optimisation. [ADD: specific languages, evaluation method and my implementation scope.]",
+    "did": "Worked on an offline multilingual translator using local language models.",
     "tools": [
       "Ollama",
-      "Llama 3.x"
+      "Llama 3.x",
+      "GitHub"
     ],
-    "result": "[ADD: verified translation quality or deployment outcome.]",
+    "result": "Enabled conversations to be translated in offline mode, supporting communication without an internet connection.",
     "readout": "AI / TOKEN STREAM"
   },
   {
@@ -37,13 +38,13 @@
     "name": "3 kW vertical axis wind turbine",
     "context": "CQA Dehu Road, Pune · Installation and commissioning",
     "problem": "Integrate a vertical axis wind turbine into an on-site renewable energy installation.",
-    "did": "Participated in installation and commissioning. [ADD: my specific electrical, mechanical and validation tasks.]",
+    "did": "Participated in installation and commissioning.",
     "tools": [
       "Vertical axis wind turbine",
       "Installation",
       "Commissioning"
     ],
-    "result": "[ADD: approved commissioning result. No measured generation data supplied.]",
+    "result": "Successfully completed installation. Energy generation will be monitored to evaluate actual output.",
     "readout": "VAWT / 3 kW RATED"
   },
   {
@@ -53,11 +54,11 @@
     "name": "Task scheduling and review management app",
     "context": "Enterprise workflows · Planning and review",
     "problem": "Make task scheduling and review activity easier to organise and follow.",
-    "did": "Worked on a task scheduling and review management application. [ADD: features I built and review workflow.]",
+    "did": "Built a task scheduling and review management application for employee task tracking and alerts.",
     "tools": [
       "Microsoft Power Apps"
     ],
-    "result": "[ADD: approved application outcome and usage.]",
+    "result": "Built a management application to track each employee’s tasks, review progress and provide alerts.",
     "readout": "APP / REVIEW QUEUE"
   },
   {
@@ -67,11 +68,11 @@
     "name": "HRMS automation",
     "context": "Enterprise workflows · Process automation",
     "problem": "Connect HR process steps in an automated workflow.",
-    "did": "Developed workflow automation solutions and technical documentation. [ADD: approved HRMS workflow scope.]",
+    "did": "Developed workflow automation solutions and technical documentation.",
     "tools": [
       "Microsoft Power Automate"
     ],
-    "result": "[ADD: verified process outcome. No time-saving figure supplied.]",
+    "result": "Developed and deployed multiple workflow automations for the company.",
     "readout": "FLOW / TRIGGER → APPROVAL → RECORD"
   },
   {
@@ -81,11 +82,11 @@
     "name": "AI powered recruitment co-agent",
     "context": "AI applications · Recruitment support",
     "problem": "Explore AI assistance for organising recruitment information.",
-    "did": "Worked on an AI powered recruitment co-agent. [ADD: my implementation scope, review controls and evaluation method.]",
+    "did": "Developed an AI powered recruitment co-agent to screen resumes and rank candidates against job requirements.",
     "tools": [
       "Qwen LLM"
     ],
-    "result": "[ADD: approved prototype outcome. Illustration uses no real candidate data.]",
+    "result": "Developed an HR screening application that screened multiple resumes and ranked candidates by their suitability for the job, supporting HR review.",
     "readout": "AGENT / ILLUSTRATIVE SCAN"
   },
   {
@@ -101,7 +102,7 @@
       "AI awareness",
       "Career development"
     ],
-    "result": "Certificate of Appreciation available. [ADD: approved details of the NAAM Foundation collaboration.]",
+    "result": "Received a Certificate of Appreciation from Tata Advanced Systems for conducting an engaging Digital Literacy and Career Development session on 30 March 2026. The session introduced students to digital literacy, artificial intelligence and career awareness, encouraging confidence and curiosity.",
     "readout": "CSR / HUMAN CONNECTION"
   }
 ]

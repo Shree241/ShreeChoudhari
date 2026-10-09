@@ -8,7 +8,7 @@
       "brand": "TATA",
       "sub": "ADVANCED SYSTEMS",
       "period": "15 June to 31 July 2025",
-      "role": "AR/VR Project Intern",
+      "role": "Industrial Automation Intern",
       "summary": "Real welding equipment, calibrated industrial sensors and multilingual VR modules for repeatable operator training.",
       "tags": [
         "Industrial Sensors",
@@ -37,16 +37,17 @@
         {
           "file": "tasl-2025-lor.pdf",
           "preview": "tasl-2025-lor-preview.jpg",
-          "title": "2025 Letter of Recommendation"
+          "title": "Letter of Recommendation"
         }
       ],
-      "cardTitle": "AR/VR Manufacturing Training"
+      "cardTitle": "AR/VR Manufacturing Training",
+      "logoClass": "tasl"
     },
     {
       "id": "tasl-ai-digital-transformation",
-      "title": "Tata Advanced Systems Ltd \u00b7 LMD AI Driven Digital Transformation",
+      "title": "Tata Advanced Systems Ltd · LMD AI Driven Digital Transformation",
       "category": "corporate",
-      "org": "Tata Advanced Systems \u00b7 Land Mobility Division",
+      "org": "Tata Advanced Systems · Land Mobility Division",
       "logo": "tasl-logo.png",
       "period": "19 January to 19 July 2026",
       "role": "Digital Transformation Intern",
@@ -76,16 +77,17 @@
           "title": "2026 Internship Certificate"
         }
       ],
-      "cardTitle": "AI Driven Digital Transformation"
+      "cardTitle": "AI Driven Digital Transformation",
+      "logoClass": "tasl"
     },
     {
       "id": "tata-motors-launch",
-      "title": "Punch MY24 \u00b7 Manufacturing Launch & Quality",
+      "title": "Punch MY24 · Manufacturing Launch & Quality",
       "category": "corporate",
       "org": "Tata Motors",
       "brand": "TATA",
       "sub": "MOTORS",
-      "period": "Jun \u00b7 Aug 2024",
+      "period": "Jun · Aug 2024",
       "role": "Project Intern",
       "summary": "New model introduction, proving plans, manufacturing readiness and cross functional quality coordination.",
       "tags": [
@@ -106,8 +108,8 @@
         "Supported component fitment checks, prismatic battery bolt inspection, brake tube interference follow up and ECU flashing activities.",
         "Reviewed manufacturing information through BOM data, part genealogy and station readiness records."
       ],
-      "context": "This experience strengthened my understanding of how launch coordination and manufacturing quality depend on reliable information across departments.",
-      "logo": "tata-logo.png",
+      "context": "The Punch MY24 launch required component, process and vehicle data to stay aligned across manufacturing stages. I worked with BIW proving and variant rollup data, PPAP and VQA records, SAP part information and IPMS vehicle tracking. Station readiness checks, BOM and part genealogy reviews, component fitment inspections and ECU flashing activities connected launch planning with practical quality validation on the production line.",
+      "logo": "tata-motors-wordmark.svg",
       "documents": [
         {
           "file": "tata-motors-certificate.pdf",
@@ -119,17 +121,18 @@
           "preview": "tata-motors-lor-preview.jpg",
           "title": "Letter of Recommendation"
         }
-      ]
+      ],
+      "logoClass": "tata-motors"
     },
     {
       "id": "iit-bombay-drug-delivery",
-      "title": "Transdermal Drug Delivery \u00b7 Device Development",
+      "title": "Transdermal Drug Delivery · Device Development",
       "category": "corporate",
-      "org": "IIT Bombay \u00b7 NanoBios Lab",
+      "org": "IIT Bombay · NanoBios Lab",
       "brand": "IIT BOMBAY",
       "sub": "NANOBIOS LAB",
-      "period": "Apr \u00b7 Aug 2023",
-      "role": "Research Intern",
+      "period": "Apr · Aug 2023",
+      "role": "Research and Electronics Intern",
       "summary": "Sonophoresis, iontophoresis and rapidly prototyped microneedle moulds for transdermal drug delivery.",
       "tags": [
         "KiCad PCB Design",
@@ -147,8 +150,8 @@
         "Contributed to controlled current circuitry for iontophoresis based transdermal delivery.",
         "Designed microneedle moulds in Fusion 360 and supported fabrication through 3D printing."
       ],
-      "context": "Research internship at NanoBios Lab, Department of Biosciences and Bioengineering, under Prof. Rohit Srivastava. Projects covered sonophoresis, iontophoresis and 3D printed microneedle based drug delivery.",
-      "logo": "iit-bombay-logo.png",
+      "context": "At NanoBios Lab, Department of Biosciences and Bioengineering, under Prof. Rohit Srivastava, I connected electronics development with experimental drug delivery research. Sonophoresis work involved KiCad circuit and PCB design, ultrasound driver integration and temperature monitoring during prototype testing. Iontophoresis work focused on controlled current circuitry, while the microneedle project used Fusion 360 and 3D printing to develop and refine mould geometry. Module testing and observations from porcine skin experiments informed subsequent prototype iterations.",
+      "logo": "iitb-official.png",
       "documents": [
         {
           "file": "iit-bombay-certificate.pdf",
@@ -160,7 +163,8 @@
           "preview": "iit-bombay-lor-preview.jpg",
           "title": "Letter of Recommendation"
         }
-      ]
+      ],
+      "logoClass": "iitb"
     },
     {
       "id": "haldiram-factory-automation",
@@ -169,7 +173,7 @@
       "org": "Haldiram Foods International",
       "brand": "HALDIRAM",
       "sub": "FOODS INTERNATIONAL",
-      "period": "Feb \u00b7 Mar 2023",
+      "period": "Feb · Mar 2023",
       "role": "Project Intern",
       "summary": "Automated Guided Vehicle (AGV) route planning, machine design and industrial safety systems.",
       "tags": [
@@ -179,7 +183,7 @@
         "Machine Design",
         "Maintenance"
       ],
-      "overview": "At Haldiram Foods International in Nagpur, I worked on Automated Guided Vehicle (AGV) route planning and automation concepts, alongside practical exposure to maintenance and troubleshooting. The work connected material movement, machine design and emergency response with the requirements of a working factory.",
+      "overview": "At Haldiram Foods International in Nagpur, I worked on Automated Guided Vehicle (AGV) route planning and automation concepts, alongside practical exposure to maintenance and troubleshooting. The work connected automated material movement, machine design and an automated emergency response system with the requirements of a working factory.",
       "work": [
         "Developed an Automated Guided Vehicle (AGV) layout for raw material transport, considering worker movement, machinery, safety zones and production routes.",
         "Designed an automatic pistachio cleaning machine.",
@@ -193,17 +197,19 @@
           "preview": "haldiram-certificate-preview.jpg",
           "title": "Industrial Training Certificate"
         }
-      ]
+      ],
+      "logo": "haldiram-logo.png",
+      "logoClass": "haldiram"
     },
     {
       "id": "aeromind",
-      "title": "AeroMind \u00b7 Autonomous Multi Payload UAV",
+      "title": "AeroMind · Autonomous Multi Payload UAV",
       "category": "academic",
       "org": "Symbiosis Skills & Professional University",
       "image": "aeromind-uav-prototype.jpg",
       "imageAlt": "AeroMind modular UAV prototype with payload mounting and operator",
-      "period": "B.Tech \u00b7 Final year project",
-      "role": "Project Team Member",
+      "period": "B.Tech · Final year project",
+      "role": "Team Leader",
       "summary": "An autonomous modular aerial system for medical logistics, surveillance and disaster response.",
       "tags": [
         "UAV Integration",
@@ -241,7 +247,7 @@
     },
     {
       "id": "smart-mobility-aid",
-      "title": "Smart Mobility Aid \u00b7 Navigation & Emergency Response",
+      "title": "Smart Mobility Aid · Navigation & Emergency Response",
       "category": "academic",
       "org": "Symbiosis Skills & Professional University",
       "brand": "MOBILITY AID",
@@ -266,7 +272,7 @@
     },
     {
       "id": "fdm-printer",
-      "title": "FDM 3D Printer \u00b7 Connected Rapid Prototyping",
+      "title": "FDM 3D Printer · Connected Rapid Prototyping",
       "category": "academic",
       "org": "Academic project",
       "brand": "FDM // 3D",
@@ -290,7 +296,7 @@
     },
     {
       "id": "plc-assembly-line",
-      "title": "Automated Assembly Line \u00b7 PLC Integration",
+      "title": "Automated Assembly Line · PLC Integration",
       "category": "academic",
       "org": "Academic project",
       "brand": "PLC // S7",
@@ -316,7 +322,7 @@
     },
     {
       "id": "hmi-chemical-mixing",
-      "title": "Chemical Mixing \u00b7 HMI Process Control",
+      "title": "Chemical Mixing · HMI Process Control",
       "category": "academic",
       "org": "Academic project",
       "brand": "HMI // MIX",
@@ -341,7 +347,7 @@
     },
     {
       "id": "flex-sensor-hand",
-      "title": "Robotic Hand \u00b7 Gesture Based Control",
+      "title": "Robotic Hand · Gesture Based Control",
       "category": "academic",
       "org": "Academic project",
       "brand": "FLEX // HAND",
@@ -365,7 +371,7 @@
     },
     {
       "id": "pet-filament",
-      "title": "PET Filament \u00b7 Sustainable 3D Printing",
+      "title": "PET Filament · Sustainable 3D Printing",
       "category": "academic",
       "org": "Academic project",
       "brand": "PET // LOOP",
@@ -391,8 +397,8 @@
   ],
   "leadership": [
     {
-      "title": "Lead Coordinator \u00b7 Robotics Competition",
-      "org": "SSPU \u00b7 2025",
+      "title": "Lead Coordinator · Robotics Competition",
+      "org": "SSPU · 2025",
       "mark": "SSPU",
       "body": "Led coordination of the university level robotics competition involving 24 teams. The role combined technical preparation, participant coordination and event delivery.",
       "image": "robotics-workshop.jpg",
@@ -400,9 +406,9 @@
     },
     {
       "title": "Digital Literacy & Career Development",
-      "org": "Tata Advanced Systems \u00b7 CSR Initiative",
+      "org": "Tata Advanced Systems · CSR Initiative",
       "mark": "TASL",
-      "body": "Conducted a Digital Literacy and Career Development session for students at Zilla Parishad Prathamik School, Malvandi Village, Pune, on 30 March 2026. Introduced digital literacy, artificial intelligence and career awareness as part of Tata Advanced Systems\u2019 CSR initiative.",
+      "body": "Conducted a Digital Literacy and Career Development session for students at Zilla Parishad Prathamik School, Malvandi Village, Pune, on 30 March 2026. Introduced digital literacy, artificial intelligence and career awareness as part of Tata Advanced Systems’ CSR initiative.",
       "image": "digital-literacy-csr.jpg",
       "caption": "Digital Literacy and Career Development session at Malvandi Village, Pune, on 30 March 2026.",
       "documents": [
@@ -414,8 +420,8 @@
       ]
     },
     {
-      "title": "Department Representative \u00b7 TVET Conference",
-      "org": "SSPU \u00b7 International Conference",
+      "title": "Department Representative · TVET Conference",
+      "org": "SSPU · International Conference",
       "mark": "TVET",
       "body": "Represented the School of Mechatronics Engineering by showcasing projects and laboratory facilities to conference participants and distinguished guests, and interacted with Sonam Wangchuk.",
       "image": "tvet-conference.jpg",
@@ -423,29 +429,29 @@
     },
     {
       "title": "Department Placement Coordinator",
-      "org": "School of Mechatronics Engineering \u00b7 SSPU",
+      "org": "School of Mechatronics Engineering · SSPU",
       "mark": "SSPU",
       "body": "Managed placement activities for the Mechatronics department, coordinating students, faculty and company representatives. Handled communication, scheduling and departmental follow up, using clear communication to support employer engagement and a smooth recruitment process."
     },
     {
-      "title": "Workshop Organiser \u00b7 Robotics & Drones",
-      "org": "SSPU \u00b7 Practical Engineering Workshops",
+      "title": "Workshop Organiser · Robotics & Drones",
+      "org": "SSPU · Practical Engineering Workshops",
       "mark": "LAB",
       "body": "Organised and conducted Robotics in a Day: From Concept to Creation and a drone technology workshop for diploma students. Managed planning, participant coordination and practical demonstrations, introducing students to robotics, aerial systems and their engineering applications.",
       "image": "drone-workshop.jpg",
       "caption": "Drone technology workshop for students."
     },
     {
-      "title": "Executive Member \u00b7 ISTE",
-      "org": "Indian Society for Technical Education \u00b7 Until 2024",
+      "title": "Executive Member · ISTE",
+      "org": "Indian Society for Technical Education · Until 2024",
       "mark": "ISTE",
-      "body": "Served as an executive member of ISTE at SSPU and contributed to technical and student activities."
+      "body": "Served as an executive member of the Indian Society for Technical Education and contributed to technical and student activities."
     }
   ],
   "education": {
     "btech": {
       "title": "Bachelor of Technology in Mechatronics Engineering",
-      "org": "Symbiosis Skills & Professional University \u00b7 Pune",
+      "org": "Symbiosis Skills & Professional University · Pune",
       "score": "9.0057 / 10",
       "year": "2026",
       "body": "Automation, Robotics, Embedded Electronics, Application and Device Development formed the core of my undergraduate studies. Academic projects and industrial internships helped me apply this foundation to control systems, medical devices, smart manufacturing and autonomous systems.",
@@ -470,5 +476,48 @@
         "Rapid Prototyping"
       ]
     }
+  },
+  "skills": {
+    "Engineering": [
+      "Rapid Prototyping",
+      "PLC Programming",
+      "3D Modeling and Design",
+      "Circuit Design",
+      "Simulation and Analysis",
+      "Microcontroller Programming",
+      "CFD Analysis",
+      "SCADA System Design",
+      "PCB Design and Layout",
+      "PCB Fabrication",
+      "Industrial IoT Integration",
+      "Sensor Integration and Calibration",
+      "Laser Cutting",
+      "Arduino Programming"
+    ],
+    "Software and programming": [
+      "C++",
+      "Python",
+      "TIA Portal",
+      "RoboAnalyzer",
+      "InTouch SCADA",
+      "KiCad EDA",
+      "Autodesk Fusion 360",
+      "Keil",
+      "AutoCAD",
+      "ANSYS CFD",
+      "SolidWorks",
+      "MATLAB",
+      "RUIDA RD Works / CNC Laser Cutting",
+      "UltiMaker Cura",
+      "Fracktory Slicer",
+      "Proteus",
+      "Multisim"
+    ],
+    "Productivity": [
+      "Microsoft Word",
+      "Microsoft Excel",
+      "Microsoft PowerPoint",
+      "Microsoft Outlook"
+    ]
   }
 }
