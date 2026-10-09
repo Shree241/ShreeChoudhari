@@ -43,8 +43,8 @@ reduced.addEventListener('change',e=>{if(e.matches){state.ambient=false;state.ru
 document.addEventListener('visibilitychange',updateSound);if($('#hmi'))ui();
 const rob=$('#robot-view');rob?.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=rob.getBoundingClientRect();state.pointer={x:((e.clientX-r.left)/r.width-.5)*2,y:(.5-(e.clientY-r.top)/r.height)*2,active:true};});rob?.addEventListener('pointerleave',()=>state.pointer.active=false);
 // Core content and controls do not depend on remote motion libraries.
-if(rob){import(base+'js/scenes.js?v=stations1').catch(()=>{$('#robot-state').textContent='3D unavailable · all project content remains accessible';$('#hmi-state').textContent='OFFLINE';document.body.classList.add('webgl-failed');});}
-if(!reduced.matches)import(base+'js/motion.js?v=stations1').catch(()=>{});
+if(rob){import(base+'js/scenes.js?v=stations2').catch(()=>{$('#robot-state').textContent='3D unavailable · all project content remains accessible';$('#hmi-state').textContent='OFFLINE';document.body.classList.add('webgl-failed');});}
+if(!reduced.matches)import(base+'js/motion.js?v=stations2').catch(()=>{});
 function restoreHash(){if(!location.hash)return;const el=document.getElementById(decodeURIComponent(location.hash.slice(1)));el?.scrollIntoView({behavior:'instant',block:'start'});}
 addEventListener('pageshow',()=>{if(location.hash)requestAnimationFrame(()=>requestAnimationFrame(restoreHash));});
 })();
