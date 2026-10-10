@@ -3,8 +3,7 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const base='/ShreeChoudhari/';
-const low=matchMedia('(max-width: 760px)').matches || (navigator.deviceMemory && navigator.deviceMemory<=4) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency<=4);
-const state=window.portfolioState={running:false,estop:false,manual:false,ambient:!reduced.matches,speed:.4,wind:8,quality:low?'lite':'high',pose:{base:20,shoulder:-20,elbow:-70},pointer:{x:0,y:0,active:false},scroll:0};
+const state=window.portfolioState={running:false,estop:false,manual:false,ambient:!reduced.matches,speed:.4,wind:8,quality:'high',pose:{base:20,shoulder:-20,elbow:-70},pointer:{x:0,y:0,active:false},scroll:0};
 const event=name=>dispatchEvent(new CustomEvent(name));
 const command=detail=>dispatchEvent(new CustomEvent('robot:command',{detail}));
 let toastTimer;function toast(text){const el=$('#toast');el.textContent=text;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,3000);}window.portfolioToast=toast;
@@ -38,14 +37,13 @@ $('#machine-reset')?.addEventListener('click',()=>{state.estop=false;state.runni
 $('#speed')?.addEventListener('input',e=>{state.speed=Number(e.target.value)/100;$('#speed-value').textContent=e.target.value+'%';ui();});
 $('#motion-toggle')?.addEventListener('click',()=>{state.ambient=!state.ambient;ui();});
 $('#sound-toggle')?.addEventListener('click',async()=>{try{if(!audioCtx){const Context=window.AudioContext||window.webkitAudioContext;if(!Context)throw Error('Audio unavailable');audioCtx=new Context();oscillator=audioCtx.createOscillator();oscillator.type='sine';gain=audioCtx.createGain();gain.gain.value=0;oscillator.connect(gain).connect(audioCtx.destination);oscillator.start();}await audioCtx.resume();sound=!sound;$('#sound-toggle').textContent=sound?'Sound on':'Sound off';$('#sound-toggle').setAttribute('aria-pressed',String(sound));updateSound();}catch{toast('Sound is unavailable in this browser.');}});
-const quality=$('#quality');if(quality){quality.value=state.quality;quality.addEventListener('change',()=>{state.quality=quality.value;event('machine:quality');});}
 reduced.addEventListener('change',e=>{if(e.matches){state.ambient=false;state.running=false;document.body.classList.remove('cursor-enabled');}ui();event('portfolio:reduced-motion');});
 document.addEventListener('visibilitychange',updateSound);if($('#hmi'))ui();
 $('#hero-start')?.addEventListener('click',()=>$('#machine-start').click());
 const rob=$('#robot-view');rob?.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=rob.getBoundingClientRect();state.pointer={x:((e.clientX-r.left)/r.width-.5)*2,y:(.5-(e.clientY-r.top)/r.height)*2,active:true};});rob?.addEventListener('pointerleave',()=>state.pointer.active=false);
 // Core content and controls do not depend on remote motion libraries.
-if(rob){import(base+'js/robot-demo.js?v=pickplace1').then(()=>import(base+'js/scenes.js?v=pickplace1')).catch(()=>{$('#robot-state').textContent='Interactive robot preview';document.body.classList.add('webgl-failed');});}
-if(!reduced.matches)import(base+'js/motion.js?v=pickplace1').catch(()=>{});
+if(rob){import(base+'js/robot-demo.js?v=mobilehq1').then(()=>import(base+'js/scenes.js?v=mobilehq1')).catch(()=>{$('#robot-state').textContent='Interactive robot preview';document.body.classList.add('webgl-failed');});}
+if(!reduced.matches)import(base+'js/motion.js?v=mobilehq1').catch(()=>{});
 function restoreHash(){if(!location.hash)return;const el=document.getElementById(decodeURIComponent(location.hash.slice(1)));el?.scrollIntoView({behavior:'instant',block:'start'});}
 addEventListener('pageshow',()=>{if(location.hash)requestAnimationFrame(()=>requestAnimationFrame(restoreHash));});
 })();

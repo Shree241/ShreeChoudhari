@@ -13,6 +13,7 @@ function boxMarkup(p,w=.22,h=.26,d=.22,color='#ffb16c'){
 function makeSVG(view){const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 700 520');svg.setAttribute('role','img');svg.setAttribute('aria-label','Animated robot pick and place demonstration');svg.classList.add('robot-svg');view.append(svg);view.classList.add('demo-ready');return svg;}
 const svgs=views.map(makeSVG);
 function draw(svg,motion){
+ svg.setAttribute('viewBox',svg.parentElement.clientWidth<=520?'70 35 590 485':'0 0 700 520');
  const pose=state.manual?{...motion.pose,...state.pose}:motion.pose,j=jointPositions(pose),coords=Object.fromEntries(Object.entries(j).map(([k,v])=>[k,project(v)]));
  const armLine=(a,b,width,color)=>`<line x1="${coords[a][0]}" y1="${coords[a][1]}" x2="${coords[b][0]}" y2="${coords[b][1]}" stroke="${color}" stroke-width="${width}" stroke-linecap="round"/>`;
  const top=project({...j.tip,y:j.tip.y+.24}),end=project(j.tip),gap=9+motion.grip*14;

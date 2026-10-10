@@ -4,9 +4,9 @@
     "short": "XR TRAINING",
     "title": "A safer place<br>to practise.",
     "name": "XR training system",
-    "context": "Morocco facility · Immersive manufacturing training",
+    "context": "Morocco facility \u00b7 Immersive manufacturing training",
     "problem": "Prepare operators to practise manufacturing tasks through immersive training.",
-    "did": "Supported XR/VR training system deployment, testing and technical support.",
+    "did": "Development, deployment and testing of XR/VR training systems, alongside technical support.",
     "tools": [
       "Meta Quest 3S",
       "HTC Vive Pro",
@@ -20,7 +20,7 @@
     "short": "AI TRANSLATION",
     "title": "Meaning, across<br>languages.",
     "name": "AI/LLM multilingual translation optimisation",
-    "context": "Language models · Multilingual communication",
+    "context": "Language models \u00b7 Multilingual communication",
     "problem": "Support communication across languages in an industrial environment.",
     "did": "Worked on an offline multilingual translator using local language models.",
     "tools": [
@@ -35,13 +35,14 @@
     "id": "wind",
     "short": "WIND ENERGY",
     "title": "From moving air<br>to useful energy.",
-    "name": "3 kW vertical axis wind turbine",
-    "context": "CQA Dehu Road, Pune · Installation and commissioning",
-    "problem": "Integrate a vertical axis wind turbine into an on-site renewable energy installation.",
-    "did": "Participated in installation and commissioning.",
+    "name": "Portable 3 kW vertical axis wind turbine",
+    "context": "Dehu Road, Pune \u00b7 Installation, deployment and testing",
+    "problem": "Provide a portable wind turbine that can be deployed where renewable power is needed.",
+    "did": "Participated in installation, deployment, testing and commissioning of the portable wind turbine.",
     "tools": [
-      "Vertical axis wind turbine",
-      "Installation",
+      "Portable vertical axis wind turbine",
+      "Deployment",
+      "Testing",
       "Commissioning"
     ],
     "result": "Successfully completed installation. Energy generation will be monitored to evaluate actual output.",
@@ -52,13 +53,13 @@
     "short": "TASK MANAGEMENT",
     "title": "Clear ownership.<br>Visible progress.",
     "name": "Task scheduling and review management app",
-    "context": "Enterprise workflows · Planning and review",
+    "context": "Enterprise workflows \u00b7 Planning and review",
     "problem": "Make task scheduling and review activity easier to organise and follow.",
     "did": "Built a task scheduling and review management application for employee task tracking and alerts.",
     "tools": [
       "Microsoft Power Apps"
     ],
-    "result": "Built a management application to track each employee’s tasks, review progress and provide alerts.",
+    "result": "Built a management application to track each employee\u2019s tasks, review progress and provide alerts.",
     "readout": "APP / REVIEW QUEUE"
   },
   {
@@ -66,21 +67,21 @@
     "short": "HRMS AUTOMATION",
     "title": "A workflow that<br>keeps moving.",
     "name": "HRMS automation",
-    "context": "Enterprise workflows · Process automation",
+    "context": "Enterprise workflows \u00b7 Process automation",
     "problem": "Connect HR process steps in an automated workflow.",
     "did": "Developed workflow automation solutions and technical documentation.",
     "tools": [
       "Microsoft Power Automate"
     ],
     "result": "Developed and deployed multiple workflow automations for the company.",
-    "readout": "FLOW / TRIGGER → APPROVAL → RECORD"
+    "readout": "FLOW / TRIGGER \u2192 APPROVAL \u2192 RECORD"
   },
   {
     "id": "agent",
     "short": "RECRUITMENT AI",
     "title": "Information ready<br>for human review.",
     "name": "AI powered recruitment co-agent",
-    "context": "AI applications · Recruitment support",
+    "context": "AI applications \u00b7 Recruitment support",
     "problem": "Explore AI assistance for organising recruitment information.",
     "did": "Developed an AI powered recruitment co-agent to screen resumes and rank candidates against job requirements.",
     "tools": [
@@ -94,7 +95,7 @@
     "short": "PEOPLE & PURPOSE",
     "title": "Technology means<br>more when shared.",
     "name": "CSR with the NAAM Foundation",
-    "context": "Community outreach · Digital literacy",
+    "context": "Community outreach \u00b7 Digital literacy",
     "problem": "Make digital literacy and career awareness more accessible to students.",
     "did": "Conducted a Digital Literacy and Career Development session at Zilla Parishad Prathamik School, Malvandi Village, Pune, on 30 March 2026.",
     "tools": [
