@@ -33,11 +33,6 @@ const projects=[
         "file": "tasl-2025-certificate.pdf",
         "preview": "tasl-2025-certificate-preview.jpg",
         "title": "2025 Internship Certificate"
-      },
-      {
-        "file": "tasl-2025-lor.pdf",
-        "preview": "tasl-2025-lor-preview.jpg",
-        "title": "2025 Letter of Recommendation"
       }
     ],
     "cardTitle": "AR/VR Manufacturing Training"
